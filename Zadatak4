@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Unesite ime skripte:"
+read Ime
+echo -en "\n"
+NovoIme=$(echo $Ime | rev)
+tac $Ime > $NovoIme.txt
+tac $Ime
